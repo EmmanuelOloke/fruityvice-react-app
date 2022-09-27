@@ -1,0 +1,23 @@
+.nav_style {
+    background-color: #eaffe3;
+    justify-content: space-between;
+    justify-self: center;
+    font-size: 1.1rem;
+
+}
+
+.img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+
+}
+
+.links {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; */
+    margin: 0 12px;
+}
+
