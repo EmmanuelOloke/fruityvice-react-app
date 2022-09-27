@@ -22,7 +22,7 @@
 ### Fonts
 
 - Family: [Roboto](https://fonts.google.com/specimen/Roboto)
-- Weights: 300, 600, 800
+- Weights: 400, 700
 
 ## Icons
 
