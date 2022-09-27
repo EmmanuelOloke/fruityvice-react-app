@@ -9,6 +9,7 @@ import './style.css'
 
 const AppNavbar = () => {
     return (
+        <>
         <Navbar fixed = 'sticky' className="nav_style" variant="light">
         <Container>
         <Navbar.Brand href="src\pages\index.js" className='brand'>
@@ -16,12 +17,14 @@ const AppNavbar = () => {
             Fruityvice
           </Navbar.Brand>
           <Nav className="me-auto links">
-            <Nav.Link className='links' href="src\pages\index.js">Home</Nav.Link>
-            <Nav.Link className='links' href="src\pages\about.js">About</Nav.Link>
-            <Nav.Link className='links' href="src\pages\contact.js">Contact us</Nav.Link>
+            <Nav.Link className='links' href="#home">Home</Nav.Link>
+            <Nav.Link className='links' href="#about">About</Nav.Link>
+            <Nav.Link className='links' href="#contact">Contact us</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
+      <h1>This is the Home Page</h1>
+      </>
     );
   };
     
