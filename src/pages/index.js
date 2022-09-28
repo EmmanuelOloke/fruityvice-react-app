@@ -5,9 +5,9 @@ const Home = () => {
     <div
       style={{
         display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100px'
       }}
     >
       <h1>This is the home Page</h1>

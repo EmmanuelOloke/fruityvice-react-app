@@ -19,9 +19,9 @@ const AppNavbar = () => {
           <Navbar.Toggle/>
           <Navbar.Collapse>
             <Nav className="me-auto links">
-            <Nav.Link className='links' href="home">Home</Nav.Link>
-            <Nav.Link className='links' href="about">About</Nav.Link>
-            <Nav.Link className='links' href="contact">Contact us</Nav.Link>
+            <Nav.Link className='links' href="/">Home</Nav.Link>
+            <Nav.Link className='links' href="/about">About</Nav.Link>
+            <Nav.Link className='links' href="/contact">Contact us</Nav.Link>
           </Nav>
           </Navbar.Collapse>
 
