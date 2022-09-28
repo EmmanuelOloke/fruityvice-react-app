@@ -9,7 +9,7 @@
 
 ### Neutral
 
-- Off White Color: #FEFBF6
+- Light Shade of Green: #EBFFF5
 -
 
 ## Typography

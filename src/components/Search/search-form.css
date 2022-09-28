@@ -1,0 +1,32 @@
+.search-container {
+    background-color: #EBFFF5;
+    margin: 2rem;
+    padding: .7rem .9rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background-color: #EBFFF5;
+    width: 15rem;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.return-btn {
+    border: none;
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
