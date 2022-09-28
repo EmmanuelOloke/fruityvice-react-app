@@ -46,7 +46,7 @@ const SearchForm = ({ fruits, setFruits }) => {
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
-        <button className="return-btn">
+        <button className="return-btn" type="submit">
           <MdKeyboardReturn />
         </button>
       </div>
