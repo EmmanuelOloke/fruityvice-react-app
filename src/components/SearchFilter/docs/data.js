@@ -1,4 +1,4 @@
-export const nutrientOptions = [
+const nutrientOptions = [
   { value: 'carbohydrates', label: 'Carbohydrates', color: '#5243AA' },
   { value: 'protein', label: 'Protein', color: '#5243AA' },
   { value: 'fat', label: 'Fat', color: '#5243AA' },
@@ -6,14 +6,14 @@ export const nutrientOptions = [
   { value: 'sugar', label: 'Sugar', color: '#5243AA' },
 ];
 
-export const familyOptions = [
+const familyOptions = [
   { value: 'rosaceae', label: 'Rosaceae', color: '#5243AA' },
   { value: 'rutaceae', label: 'Rutaceae', color: '#5243AA' },
   { value: 'anacardiaceae', label: 'Anacardiaceae', color: '#5243AA' },
   { value: 'cucurbitaceae', label: 'Cucurbitaceae', color: '#5243AA' },
 ];
 
-export const genusOptions = [
+const genusOptions = [
   { value: 'citrus', label: 'Citrus', color: '#5243AA' },
   { value: 'malus', label: 'Malus', color: '#5243AA' },
   { value: 'prunus', label: 'Prunus', color: '#5243AA' },
