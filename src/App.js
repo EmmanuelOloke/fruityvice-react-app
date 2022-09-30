@@ -44,7 +44,7 @@ function App() {
         </Routes>
       </Router>
       <SearchForm fruits={fruits} setFruits={setFruits} />
-      <SearchFilter />
+      <SearchFilter setFruits={setFruits} />
       <FruitCard fruits={fruits} />
     </React.Fragment>
   );
