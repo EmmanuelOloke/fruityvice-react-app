@@ -1,6 +1,4 @@
 import React from "react";
-import { NavLink } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import "./fruit-card.css";
 
 const FruitCard = ({ fruits }) => {
