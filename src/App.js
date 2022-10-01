@@ -19,9 +19,9 @@ function App() {
   const [fruits, setFruits] = useState([]);
   const [fruitInDetail, setFruitinDetail] = useState({});
 
-  const getFruitDetails  = async (fruitname) => {
+  const getFruitDetails  = async () => {
     try {
-      const response = await fetch(`https://fruityvice.com/api/fruit/${fruitname}`);
+      const response = await fetch(`https://fruityvice.com/api/fruit/${fruitInDetail}`);
       console.log("response = ",response);
       const oneFruit = await response.json();
       if (response.status === 200) {
@@ -57,7 +57,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path={`/showd/*`} element={<ShowDetail />} fruitInDetail={fruitInDetail} />
+          <Route path="/showd/:id"  element={<ShowDetail />} />
 
           {/* https://fruityvice.com/api/fruit/${fruit.name} */}
         </Routes>
