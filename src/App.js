@@ -16,6 +16,7 @@ import { useEffect } from 'react';
 
 function App() {
   const [fruits, setFruits] = useState([]);
+  const [filteredFruits, setFilteredFruits] = useState([]);
 
   const fetchFruits = async () => {
     try {
@@ -23,6 +24,7 @@ function App() {
       const fruits = await response.json();
       if (response.status === 200) {
         setFruits(fruits);
+        setFilteredFruits(fruits);
       }
     } catch (error) {
       console.log('Something went wrong while fetching the fruits', error);
@@ -44,8 +46,12 @@ function App() {
         </Routes>
       </Router>
       <SearchForm fruits={fruits} setFruits={setFruits} />
-      <SearchFilter setFruits={setFruits} />
-      <FruitCard fruits={fruits} />
+      <SearchFilter
+        fruits={fruits}
+        filteredFruits={filteredFruits}
+        setFilteredFruits={setFilteredFruits}
+      />
+      <FruitCard fruits={filteredFruits} />
     </React.Fragment>
   );
 }
