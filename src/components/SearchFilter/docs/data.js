@@ -1,37 +1,29 @@
-const nutrientOptions = [
-  { value: 'carbohydrates', label: 'Carbohydrates', color: '#5243AA' },
-  { value: 'protein', label: 'Protein', color: '#5243AA' },
-  { value: 'fat', label: 'Fat', color: '#5243AA' },
-  { value: 'calories', label: 'Calories', color: '#5243AA' },
-  { value: 'sugar', label: 'Sugar', color: '#5243AA' },
+export const genuses = ['citrus', 'prunus', 'malus', 'rubus', 'fragaria'];
+export const families = ['rosaceae', 'rutaceae', 'actinidiaceae', 'musaceae', 'cucurbitaceae'];
+
+const nutrientOptionsHighToLow = [
+  { value: 'carbohydrates', label: 'Carbohydrates', order: 'highToLow' },
+  { value: 'protein', label: 'Protein', order: 'highToLow' },
+  { value: 'fat', label: 'Fat', order: 'highToLow' },
+  { value: 'calories', label: 'Calories', order: 'highToLow' },
+  { value: 'sugar', label: 'Sugar', order: 'highToLow' },
 ];
 
-const familyOptions = [
-  { value: 'rosaceae', label: 'Rosaceae', color: '#5243AA' },
-  { value: 'rutaceae', label: 'Rutaceae', color: '#5243AA' },
-  { value: 'anacardiaceae', label: 'Anacardiaceae', color: '#5243AA' },
-  { value: 'cucurbitaceae', label: 'Cucurbitaceae', color: '#5243AA' },
-];
-
-const genusOptions = [
-  { value: 'citrus', label: 'Citrus', color: '#5243AA' },
-  { value: 'malus', label: 'Malus', color: '#5243AA' },
-  { value: 'prunus', label: 'Prunus', color: '#5243AA' },
-  { value: 'rubus', label: 'Rubus', color: '#5243AA' },
-  { value: 'fragaria', label: 'Fragaria', color: '#5243AA' },
+const nutrientsOptionsLowToHigh = [
+  { value: 'carbohydrates_lh', label: 'Carbohydrates', order: 'lowToHigh' },
+  { value: 'protein_lh', label: 'Protein', order: 'lowToHigh' },
+  { value: 'fat_lh', label: 'Fat', order: 'lowToHigh' },
+  { value: 'calories_lh', label: 'Calories', order: 'lowToHigh' },
+  { value: 'sugar_lh', label: 'Sugar', order: 'lowToHigh' },
 ];
 
 export const groupedOptions = [
   {
-    label: 'Nutrients',
-    options: nutrientOptions,
+    label: 'Nutrients: High to Low',
+    options: nutrientOptionsHighToLow,
   },
   {
-    label: 'Family',
-    options: familyOptions,
-  },
-  {
-    label: 'Genus',
-    options: genusOptions,
+    label: 'Nutrients: Low to High',
+    options: nutrientsOptionsLowToHigh,
   },
 ];
