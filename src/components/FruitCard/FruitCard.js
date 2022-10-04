@@ -9,7 +9,7 @@ const FruitCard = ({ fruits }) => {
           <a
             href={`/showd/${fruit.name}`}
             onClick={() => {
-              console.log("fruit.name = ",fruit.name)
+              console.log("fruit.name = ", fruit.name);
             }}
           >
             {fruit.name}
