@@ -138,7 +138,7 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
         <Select
           className="search-filter"
           options={groupedOptions}
-          placeholder="Filter Fruits"
+          placeholder="Filter Fruits by Nutrients"
           formatGroupLabel={formatGroupLabel}
           backgroundColor="EBFFF5"
           onChange={handleFilterChange}
