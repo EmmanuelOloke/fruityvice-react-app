@@ -1,7 +1,9 @@
 import React from "react";
 import "./ShowDetail.css";
+import { useNavigate } from "react-router-dom";
 
 const NotFoundPage = () => {
+    const navigate = useNavigate();
   const cardStyle = {
     padding: "25px",
     display: "flex",
@@ -36,6 +38,7 @@ const NotFoundPage = () => {
               It seems like the we couldn't find the page you were looking for.
             </h2>
             <br></br>
+            <div>
             <button
               className="button-37"
               onClick={() => {
@@ -43,7 +46,16 @@ const NotFoundPage = () => {
               }}
             >
               Back
+            </button><button
+              className="button-home"
+              onClick={() => {
+                navigate("/")
+              }}
+            >
+              Home
             </button>
+            </div>
+           
           </div>
         </div>
       </div>
