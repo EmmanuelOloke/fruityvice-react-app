@@ -1,0 +1,24 @@
+.search-filter {
+    background-color: #EBFFF5;
+    margin: 1rem;
+    width: 20em;
+    outline: none;
+    border: none;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+label {
+    margin-left: .5rem;
+}
+.family-checkboxes {
+    padding: 1rem;
+}
+
+.genus-checkboxes {
+    padding: 1rem;
+}
