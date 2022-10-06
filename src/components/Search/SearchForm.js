@@ -3,36 +3,31 @@ import { MdKeyboardReturn, MdSearch } from 'react-icons/md';
 
 import './search-form.css';
 
-const SearchForm = ({ fruits, setFruits }) => {
+const SearchForm = ({ fruits, filteredFruits, setFilteredFruits }) => {
   const [searchInput, setSearchInput] = useState('');
-  const searchedFruit = [];
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    let searchFiltered;
+
+    if (filteredFruits.length === 0) setFilteredFruits(fruits);
 
     if (!searchInput) {
       alert('Please enter a fruit to search for');
       return;
     }
 
-    // const match = fruits.filter((fruit) => {
-    //   return fruit.name.includes(searchInput);
-    // });
+    let allFruitsCopy = [...fruits];
+    searchFiltered = allFruitsCopy.filter((searchedFruit) => {
+      let fruitsInSmallLetters = searchedFruit.name.toLowerCase();
+      if (fruitsInSmallLetters.includes(searchInput)) return searchedFruit;
+    });
 
-    // setFruits(match);
-
-    try {
-      const response = await fetch(`https://fruityvice.com/api/fruit/${searchInput}`);
-      searchedFruit.push(await response.json());
-
-      if (response.status !== 200) {
-        alert('The Fruit was not found');
-        return;
-      } else {
-        setFruits(searchedFruit);
-      }
-    } catch (error) {
-      console.log('Something went wrong', error);
+    if (searchFiltered.length === 0) {
+      alert('The fruit was not found');
+      setFilteredFruits(allFruitsCopy);
+    } else {
+      setFilteredFruits(searchFiltered);
     }
   };
   return (
