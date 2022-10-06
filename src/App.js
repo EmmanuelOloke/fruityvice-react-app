@@ -10,7 +10,6 @@ import ShowDetail from './pages/ShowDetail';
 import NotFoundPage from './pages/notfound';
 
 function App() {
- 
   return (
     <React.Fragment>
       <Router>

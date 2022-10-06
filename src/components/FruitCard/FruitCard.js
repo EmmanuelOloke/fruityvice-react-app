@@ -1,5 +1,5 @@
-import React from "react";
-import "./fruit-card.css";
+import React from 'react';
+import './fruit-card.css';
 
 const FruitCard = ({ fruits }) => {
   const eachFruit = fruits.map((fruit) => (
@@ -9,7 +9,7 @@ const FruitCard = ({ fruits }) => {
           <a
             href={`/showd/${fruit.name}`}
             onClick={() => {
-              console.log("fruit.name = ", fruit.name);
+              console.log('fruit.name = ', fruit.name);
             }}
           >
             {fruit.name}
