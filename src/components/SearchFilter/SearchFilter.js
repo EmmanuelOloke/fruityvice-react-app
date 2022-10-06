@@ -100,43 +100,45 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
 
   return (
     <>
-      <div className="horizontal">
-        <div className="genus-checkboxes">
-          <h5>Genus</h5>
-          {genuses.map((genus) => (
-            <Fragment key={genus}>
-              <input
-                type="checkbox"
-                name={`${genus}`}
-                value={`${genus}`}
-                onChange={handleGenusCriteria}
-              />
-              <label htmlFor="genus" style={{ textTransform: 'capitalize' }}>
-                {genus}
-              </label>
-              <br />
-            </Fragment>
-          ))}
-        </div>
-        <div className="family-checkboxes">
-          <h5>Family</h5>
-          {families.map((family) => (
-            <Fragment key={family}>
-              <input
-                type="checkbox"
-                name={`${family}`}
-                value={`${family}`}
-                onChange={handleFamilyCriteria}
-              />
-              <label htmlFor="family" style={{ textTransform: 'capitalize' }}>
-                {family}
-              </label>
-              <br />
-            </Fragment>
-          ))}
+      <div className="filter-container">
+        <div className="horizontal">
+          <div className="genus-checkboxes">
+            <h5>Genus</h5>
+            {genuses.map((genus) => (
+              <Fragment key={genus}>
+                <input
+                  type="checkbox"
+                  name={`${genus}`}
+                  value={`${genus}`}
+                  onChange={handleGenusCriteria}
+                />
+                <label htmlFor="genus" style={{ textTransform: 'capitalize' }}>
+                  {genus}
+                </label>
+                <br />
+              </Fragment>
+            ))}
+          </div>
+          <div className="family-checkboxes">
+            <h5>Family</h5>
+            {families.map((family) => (
+              <Fragment key={family}>
+                <input
+                  type="checkbox"
+                  name={`${family}`}
+                  value={`${family}`}
+                  onChange={handleFamilyCriteria}
+                />
+                <label htmlFor="family" style={{ textTransform: 'capitalize' }}>
+                  {family}
+                </label>
+                <br />
+              </Fragment>
+            ))}
+          </div>
         </div>
         <Select
-          className="search-filter"
+          className="search-filter-select"
           options={groupedOptions}
           placeholder="Filter Fruits by Nutrients"
           formatGroupLabel={formatGroupLabel}
