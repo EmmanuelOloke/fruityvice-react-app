@@ -1,75 +1,104 @@
 body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-  }
-.content{
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.about-body {
+    margin-top: 2rem;
     display: flex;
-    flex-direction: row;
-    margin: 5rem 5rem 3rem 8rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 10px;
+    flex-flow: column nowrap;
 }
 
-.text-1{
-    height: 200px;
-    width: 400px;
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* margin: 5rem 5rem 3rem 8rem; */
+  justify-content: space-around;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
 }
 
-.content-2{
-    display: flex;
-    flex-direction: row;
-    margin: 5rem 5rem 3rem 8rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 10px;
+.img-content {
+  height: 400px;
+  max-width: 100%;
 }
 
-.cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    border-radius: 2rem ;
-    
-
+.content-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* margin: 5rem 5rem 3rem 8rem; */
+  justify-content: space-around;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
-.cardItem{
-    height: 500px;
-    width: 300px;
-    margin: 3rem;
-    background-color: #FFE7CC;
-    /* padding: 20px; */
-    border-radius: 20px;
-    
+.img-content2 {
+  height: 400px;
+  max-width: 100%;
 }
-img{
-    height: 250px;
+
+.text-1 {
+  height: 200px;
+  width: 400px;
+  text-align: left;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 2rem;
+}
+
+.cardItem {
+  height: 600px;
+  width: 300px;
+  margin: 3rem;
+  background-color: #ebfff5;
+  border-radius: 20px;
+}
+img {
+  /* height: 250px;
     width: 300px;
     
     margin-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 20px; */
 }
 
-.team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.profile-image {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: none;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
-h2{
-   padding: 10px; 
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-p{
-  padding: 5 px;  
+h2 {
+  padding: 10px;
+  text-align: center;
 }
 
-.icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
+.cardItem p {
+  padding: 10 px;
+  text-align: center;
 }
 
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
