@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages';
 import About from './pages/about';
-import Contact from './pages/contact';
 import ShowDetail from './pages/ShowDetail';
 import NotFoundPage from './pages/notfound';
 
@@ -17,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/about/team" element={<About/>} />
+          {/* <Route path="/about/team" element={<About/>} /> */}
           <Route path="/showd/:id" element={<ShowDetail />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

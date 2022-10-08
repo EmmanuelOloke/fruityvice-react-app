@@ -40,7 +40,7 @@ const About = () => {
         </div>
       </div>
       <div className="team">
-        <h1><a id="team">Meet our team</a></h1>
+        <h1><a id="team" href="#team">Meet our team</a></h1>
       </div>
       <div className="cards">
         <div className="cardItem">

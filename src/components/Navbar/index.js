@@ -1,9 +1,7 @@
 import React from 'react';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
 import { GiFruitBowl } from 'react-icons/gi';
 import './style.css'
 
@@ -21,14 +19,12 @@ const AppNavbar = () => {
             <Nav className="me-auto links">
             <Nav.Link className='links' href="/">Home</Nav.Link>
             <Nav.Link className='links' href="/about">About</Nav.Link>
-            <Nav.Link className='links' href="/about/team">Team</Nav.Link>
+            <Nav.Link className='links' href="/about#team">Team
+</Nav.Link>
           </Nav>
-          </Navbar.Collapse>
-
-         
+          </Navbar.Collapse>         
         </Container>
       </Navbar>
-      {/* <h1>This is the Home Page</h1> */}
       </>
     );
   };
