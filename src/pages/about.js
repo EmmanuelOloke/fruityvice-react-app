@@ -4,7 +4,7 @@ import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 
 const About = () => {
   return (
-    <div>
+    <div className="about-body">
       <div className="content">
         <div className="title">
           <h1>Fruityvice</h1>
@@ -16,25 +16,17 @@ const About = () => {
           </p>
         </div>
         <div>
-          <iframe
-            src="https://giphy.com/embed/3oriO7kxt2XNqbSVeU"
-            width="480"
-            height="480"
-            frameBorder="0"
-            class="giphy-embed"
-            allowFullScreen
-          ></iframe>
+          <img className="img-content"
+            src="https://images.unsplash.com/photo-1523472721958-978152f4d69b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80.png"
+            alt="sliced citrus fruits"
+          />
         </div>
       </div>
       <div className="content-2">
-        <iframe
-          src="https://giphy.com/embed/BiR9oszCT9ojhtY3JR"
-          width="480"
-          height="480"
-          frameBorder="0"
-          class="giphy-embed"
-          allowFullScreen
-        ></iframe>
+        <img className="img-content2"
+          src="https://images.unsplash.com/photo-1521997888043-aa9c827744f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80.jpg"
+          alt="avocado cut in half"
+        />
         <div className="text-1">
           <h1>What function does it do?</h1>
           <p>
@@ -48,11 +40,11 @@ const About = () => {
         </div>
       </div>
       <div className="team">
-        <h1>Meet our team</h1>
+        <h1><a id="team" href="#team">Meet our team</a></h1>
       </div>
       <div className="cards">
         <div className="cardItem">
-          <img src="https://ca.slack-edge.com/T03L8Q5BHT7-U03M72CCQGG-c81a804d71b7-512"></img>
+          <img alt="Team member" className="profile-image" src="https://ca.slack-edge.com/T03L8Q5BHT7-U03M72CCQGG-c81a804d71b7-512"></img>
           <h2>Bharadwaj Kuna</h2>
           <p>
             "I'm a Aspiring FrontEnd Web developer I always feel like My code
@@ -83,7 +75,7 @@ const About = () => {
           </div>
         </div>
         <div className="cardItem">
-          <img src="https://ca.slack-edge.com/T03L8Q5BHT7-U03NRBXU0KX-2fb88b795958-512"></img>
+          <img alt="Team member" className="profile-image" src="https://ca.slack-edge.com/T03L8Q5BHT7-U03NRBXU0KX-2fb88b795958-512"></img>
           <h2>Idiris </h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -114,7 +106,7 @@ const About = () => {
           </div>
         </div>
         <div className="cardItem">
-          <img src=" https://ca.slack-edge.com/T03L8Q5BHT7-U03LEBUBF37-6c85e9e1c6cc-512"></img>
+          <img alt="Team member" className="profile-image" src=" https://ca.slack-edge.com/T03L8Q5BHT7-U03LEBUBF37-6c85e9e1c6cc-512"></img>
           <h2>Emmanuel oloke</h2>
           <p>
             “Software Engineer from Nigeria with a passion for bringing
