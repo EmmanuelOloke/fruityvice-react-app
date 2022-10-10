@@ -1,5 +1,7 @@
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
+  background: rgb(76,255,104);
+  background: linear-gradient(36deg, rgba(76,255,104,1) 0%, rgba(90,255,94,1) 50%, rgba(0,212,255,1) 100%); 
 }
 
 /* .about-body {
@@ -65,7 +67,7 @@ body {
   height: 600px;
   width: 300px;
   margin: 3rem;
-  background-color: #ebfff5;
+  background-color: #D0F0C0;
   border-radius: 20px;
 }
 
