@@ -79,14 +79,17 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
       let filtered = [];
       if (genusCriteria.length > 0) {
         genusCriteria?.forEach((item) => {
-          filtered = [...filtered, ...fruits.filter((match) => match.genus.toLowerCase() === item)];
+          filtered = [
+            ...filtered,
+            ...filteredFruits.filter((match) => match.genus.toLowerCase() === item),
+          ];
         });
       }
       if (familyCriteria.length > 0) {
         familyCriteria?.forEach((item) => {
           filtered = [
             ...filtered,
-            ...fruits.filter((match) => match.family.toLowerCase() === item),
+            ...filteredFruits.filter((match) => match.family.toLowerCase() === item),
           ];
         });
       }
@@ -142,7 +145,6 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
           options={groupedOptions}
           placeholder="Filter Fruits by Nutrients"
           formatGroupLabel={formatGroupLabel}
-          backgroundColor="EBFFF5"
           onChange={handleFilterChange}
         />
       </div>
