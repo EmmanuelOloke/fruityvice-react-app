@@ -20,6 +20,7 @@ function App() {
           <Route path="/showd/:id" element={<ShowDetail />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
+        
       </Router>
     </React.Fragment>
   );

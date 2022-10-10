@@ -97,6 +97,7 @@ h2 {
   text-align: center;
 }
 
+
 .cardItem p {
   padding: 10 px;
   text-align: center;
@@ -136,7 +137,7 @@ h2 {
   }
 }
 
-@media (min-width: 810px){
+@media (max-width: 820px){
   .content-2{
     margin-bottom: 110px;
   }
