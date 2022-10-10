@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import AppNavbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import Home from './pages';
 import About from './pages/about';
 import ShowDetail from './pages/showdetail';
 import NotFoundPage from './pages/notfound';
+
 
 function App() {
   return (
