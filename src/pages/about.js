@@ -4,7 +4,7 @@ import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 
 const About = () => {
   return (
-      <div>
+      <div className = "About">
         <div className="content-1">
           <div>
             <h1>Fruityvice</h1>
