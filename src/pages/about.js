@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
+import { useLocation } from 'react-router-dom';
 
 const About = () => {
+  const { hash } = useLocation();
+  const id = hash.replace('#', '');
+
+  useEffect(() => {
+    document.getElementById(id)?.scrollIntoView();
+  }, [ id ]);
+
   return (
       <div className = "About">
         <div className="content-1">
