@@ -15,6 +15,12 @@
     flex-wrap: wrap;
     gap: 4.5rem;
     margin: 3rem 0;
+    
+}
+
+.fruit-card{
+    box-shadow:
+    rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
 }
 
 @media screen and (min-width: 768px) {
