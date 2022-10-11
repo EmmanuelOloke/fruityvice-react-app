@@ -15,8 +15,8 @@ const About = () => {
     <div className="About">
       <div className="content-1">
         <div>
-          <h1>Fruityvice</h1>
-          <p className="text-1">
+          <h1 className="title-gradient">Fruityvice</h1>
+          <p className="text-1 grey-text">
             A powerful webservice which provides data for all kinds of fruit! You can use Fruityvice
             to find out interesting information about fruit and educate yourself. The webservice is
             completely free to use and contribute to.
@@ -39,8 +39,8 @@ const About = () => {
           />
         </div>
         <div className="text-1">
-          <h1>What function does it do?</h1>
-          <p>
+          <h1 className="title-gradient">What function does it do?</h1>
+          <p className="grey-text">
             With Fruityvice you can receive interesting data from any fruit of your choosing. On top
             of that you can add fruits by yourself as well! Added fruits will first have to be
             approved by an admin to avoid any errors in the data. The shown data is based on 100
@@ -50,13 +50,8 @@ const About = () => {
         </div>
       </div>
       <div className="team">
-        <h1>
-          {/* <a id="team" href="#team">
-              Meet our team
-            </a> */}
-          <MDBBtn toggle id="team" href="#team" size="lg">
-            Meet Our Team
-          </MDBBtn>
+        <h1 className="meet-team-title" id="team" href="#team">
+          Meet Our Team
         </h1>
       </div>
       <div className="cards">
@@ -101,7 +96,7 @@ const About = () => {
             className="profile-image"
             src="https://ca.slack-edge.com/T03L8Q5BHT7-U03NRBXU0KX-2fb88b795958-512"
           ></img>
-          <h2>Idiris </h2>
+          <h2>Idiris Omer</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <div className="icons">
             <MDBBtn
@@ -133,7 +128,7 @@ const About = () => {
             className="profile-image"
             src=" https://ca.slack-edge.com/T03L8Q5BHT7-U03LEBUBF37-6c85e9e1c6cc-512"
           ></img>
-          <h2>Emmanuel oloke</h2>
+          <h2>Emmanuel Oloke</h2>
           <p>
             “Software Engineer from Nigeria with a passion for bringing beautiful UI designs to life
             and making them functional”

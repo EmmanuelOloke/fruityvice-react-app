@@ -1,7 +1,7 @@
 .About{
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  background: rgb(76,255,104);
-  background: linear-gradient(36deg, rgba(76,255,104,1) 0%, rgba(90,255,94,1) 50%, rgba(0,212,255,1) 100%); 
+  /* background: rgb(76,255,104);
+  background: linear-gradient(36deg, rgba(76,255,104,1) 0%, rgba(90,255,94,1) 50%, rgba(0,212,255,1) 100%); */
 }
 
 /* .about-body {
@@ -10,6 +10,28 @@
     flex-flow: column nowrap;
 } */
 
+.title-gradient {
+  background: rgb(78,191,0);
+  background: linear-gradient(90deg, rgba(78,191,0,1) 0%, rgba(255,252,18,1) 45%, rgba(255,162,0,1) 100%);
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.grey-text {
+  color: #425466;
+}
+
+.meet-team-title {
+  background: rgb(78,191,0);
+  background: linear-gradient(180deg, rgba(78,191,0,1) 0%, rgba(244,255,55,1) 100%);
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .content-1 {
   display: flex;
   flex-direction: row;
@@ -17,7 +39,7 @@
   /* margin: 5rem 5rem 3rem 8rem; */
   justify-content: space-around;
   margin-bottom: 50px;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   align-items: center;
 }
 
@@ -47,7 +69,7 @@
   /* margin: 5rem 5rem 3rem 8rem; */
   justify-content: space-around;
   margin-bottom: 50px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   align-items: center;
 }
 
@@ -66,10 +88,11 @@
 }
 
 .cardItem {
+  color: #425466;
   height: 600px;
   width: 300px;
   margin: 3rem;
-  background-color: #D0F0C0;
+  /* background-color: #D0F0C0; */
   border-radius: 20px;
   box-shadow:
   rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
