@@ -3,7 +3,6 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import SearchForm from '../components/Search/SearchForm';
 import SearchFilter from '../components/SearchFilter/SearchFilter';
 import FruitCard from '../components/FruitCard/FruitCard';
-import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
