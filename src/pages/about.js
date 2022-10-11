@@ -46,9 +46,10 @@ const About = () => {
         </div>
         <div className="team">
           <h1>
-            <a id="team" href="#team">
+            {/* <a id="team" href="#team">
               Meet our team
-            </a>
+            </a> */}
+            <MDBBtn toggle id="team" href="#team" size="lg">Meet Our Team</MDBBtn>
           </h1>
         </div>
         <div className="cards">
