@@ -20,7 +20,7 @@ const SearchForm = ({ fruits, filteredFruits, setFilteredFruits }) => {
     let allFruitsCopy = [...fruits];
     searchFiltered = allFruitsCopy.filter((searchedFruit) => {
       let fruitsInSmallLetters = searchedFruit.name.toLowerCase();
-      if (fruitsInSmallLetters.includes(searchInput)) return searchedFruit;
+      if (fruitsInSmallLetters.includes(searchInput.toLowerCase())) return searchedFruit;
     });
 
     if (searchFiltered.length === 0) {

@@ -6,6 +6,8 @@ import FruitCard from '../components/FruitCard/FruitCard';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
+import Basket from '../assets/empty-fruit-basket.png';
+
 import './style.css';
 
 const Home = () => {
@@ -46,24 +48,54 @@ const Home = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="search-components">
-          <SearchForm
-            fruits={fruits}
-            filteredFruits={filteredFruits}
-            setFilteredFruits={setFilteredFruits}
-          />
-          <SearchFilter
-            fruits={fruits}
-            filteredFruits={filteredFruits}
-            setFilteredFruits={setFilteredFruits}
-          />
-        </div>
+      {filteredFruits.length > 0 ? (
+        <div className="container">
+          <div className="search-components">
+            <SearchForm
+              fruits={fruits}
+              filteredFruits={filteredFruits}
+              setFilteredFruits={setFilteredFruits}
+            />
+            <SearchFilter
+              fruits={fruits}
+              filteredFruits={filteredFruits}
+              setFilteredFruits={setFilteredFruits}
+            />
+          </div>
 
-        <div className="fruit-cards">
-          <FruitCard fruits={filteredFruits} getFruitDetails={getFruitDetails} />
+          <div className="fruit-cards">
+            <FruitCard fruits={filteredFruits} getFruitDetails={getFruitDetails} />
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="container">
+          <div className="search-components">
+            <SearchForm
+              fruits={fruits}
+              filteredFruits={filteredFruits}
+              setFilteredFruits={setFilteredFruits}
+            />
+            <SearchFilter
+              fruits={fruits}
+              filteredFruits={filteredFruits}
+              setFilteredFruits={setFilteredFruits}
+            />
+          </div>
+
+          <div className="empty-basket">
+            <div>No Fruit match what you've searched for</div>
+            <img src={Basket} alt="Empty Fruit Basket" />
+            <button
+              className="empty-basket-btn"
+              onClick={() => {
+                window.location.href = '/';
+              }}
+            >
+              Go To Homepage
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 };
