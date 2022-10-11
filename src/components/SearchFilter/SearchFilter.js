@@ -71,7 +71,7 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
     // First check if the genusCriteria and familyCriteria state arrays are empty, and if they are setFilteredFruits to fruits variable containing all fruits as fetched from the API.
     if (genusCriteria.length === 0 && familyCriteria.length === 0) {
       // render the original array of fruits
-      setFilteredFruits(fruits);
+      setFilteredFruits(filteredFruits);
     } else {
       // If the genusCriteria or the familyCriteria array contains some items, then forEach of those item, make a copy of the fruits state array and perform a filter on it.
       // Then return only values that match with the genus or the family selected.
@@ -79,14 +79,17 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
       let filtered = [];
       if (genusCriteria.length > 0) {
         genusCriteria?.forEach((item) => {
-          filtered = [...filtered, ...fruits.filter((match) => match.genus.toLowerCase() === item)];
+          filtered = [
+            ...filtered,
+            ...filteredFruits.filter((match) => match.genus.toLowerCase() === item),
+          ];
         });
       }
       if (familyCriteria.length > 0) {
         familyCriteria?.forEach((item) => {
           filtered = [
             ...filtered,
-            ...fruits.filter((match) => match.family.toLowerCase() === item),
+            ...filteredFruits.filter((match) => match.family.toLowerCase() === item),
           ];
         });
       }
@@ -142,7 +145,6 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
           options={groupedOptions}
           placeholder="Filter Fruits by Nutrients"
           formatGroupLabel={formatGroupLabel}
-          backgroundColor="EBFFF5"
           onChange={handleFilterChange}
         />
       </div>
