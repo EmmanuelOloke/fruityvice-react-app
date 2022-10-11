@@ -83,8 +83,8 @@ const Home = () => {
           </div>
 
           <div className="empty-basket">
-            <div>No Fruit match what you've searched for</div>
-            <img src={Basket} alt="Empty Fruit Basket" />
+            <div className="empty-basket-title">No Fruits Found</div>
+            <img className="basket-img" src={Basket} alt="Empty Fruit Basket" />
             <button
               className="empty-basket-btn"
               onClick={() => {

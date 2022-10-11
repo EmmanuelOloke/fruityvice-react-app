@@ -30,6 +30,15 @@
     margin-top: 3rem;
 }
 
+.basket-img {
+    width: 30rem;
+}
+
+.empty-basket-title {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 .empty-basket-btn {
     background-color: #13aa52;
     border: none;

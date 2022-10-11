@@ -18,6 +18,7 @@
   justify-content: space-around;
   margin-bottom: 50px;
   font-size: 1.6rem;
+  align-items: center;
 }
 
 .img-content-1 {
@@ -47,6 +48,7 @@
   justify-content: space-around;
   margin-bottom: 50px;
   font-size: 1.2rem;
+  align-items: center;
 }
 
 
