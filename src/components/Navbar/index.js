@@ -6,6 +6,7 @@ import { GiFruitBowl } from "react-icons/gi";
 import "./style.css";
 
 const AppNavbar = () => {
+
   return (
     <>
       <Navbar
@@ -20,8 +21,8 @@ const AppNavbar = () => {
             <GiFruitBowl className="img" /> Fruityvice
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto ">
+          <Navbar.Collapse id="basic-navbar-nav" className=".navbar-collapse">
+            <Nav className="ms-auto " >
               <Nav.Link className="links" href="/">
                 Home
               </Nav.Link>
