@@ -6,8 +6,7 @@ import Home from './pages';
 import About from './pages/about';
 import ShowDetail from './pages/ShowDetail';
 import NotFoundPage from './pages/notfound';
-import Footer from './components/Footer/Footer'
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
           <Route path="/showd/:id" element={<ShowDetail />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </React.Fragment>
   );
