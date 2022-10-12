@@ -163,10 +163,18 @@ h2 {
     box-shadow:
       rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
   }
+  .content-2{
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 820px){
   .content-2{
-    margin-bottom: 110px;
+    margin-bottom: 250px;
+  }
+}
+@media screen and (min-width:820px) and (max-width:1100px){
+  .content-2{
+    margin-bottom: 250px;
   }
 }
