@@ -196,3 +196,20 @@ h2 {
     margin-bottom: 250px;
   }
 }
+
+@media(max-width: 800px){
+  .content-2{
+    display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  /* margin: 5rem 5rem 3rem 8rem; */
+  justify-content: space-around;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  align-items: center;
+  }
+  .img-content-2{
+    margin-top: 210px;
+  }
+
+}
