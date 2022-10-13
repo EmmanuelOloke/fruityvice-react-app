@@ -89,6 +89,8 @@
 }
 
 .cardItem {
+  display: flex;
+  flex-flow: column nowrap;
   color: #425466;
   height: 600px;
   width: 300px;
@@ -127,8 +129,24 @@ h2 {
 
 
 .cardItem p {
-  padding: 10 px;
+  padding: 0 10px;
   text-align: center;
+  font-size: 1rem;
+}
+
+.card-content {
+  display: flex;
+  flex-flow: column nowrap;
+  /* height: 100%; */
+}
+
+.card-content p {
+  height: 123px;
+  
+}
+
+.card-content .icons {
+  flex-grow: 1;
 }
 
 .icons {
