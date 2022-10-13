@@ -71,7 +71,7 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
     // First check if the genusCriteria and familyCriteria state arrays are empty, and if they are setFilteredFruits to fruits variable containing all fruits as fetched from the API.
     if (genusCriteria.length === 0 && familyCriteria.length === 0) {
       // render the original array of fruits
-      setFilteredFruits(filteredFruits);
+      setFilteredFruits(fruits);
     } else {
       // If the genusCriteria or the familyCriteria array contains some items, then forEach of those item, make a copy of the fruits state array and perform a filter on it.
       // Then return only values that match with the genus or the family selected.
