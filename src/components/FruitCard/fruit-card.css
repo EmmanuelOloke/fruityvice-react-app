@@ -1,9 +1,10 @@
 .fruit-card {
-    background-color: #ebfff5;
+    background-color: #ffffff;
     width: 250px;
     height: 250px;
     border-radius: 10px;
     padding: 10px 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .fruit-name {
