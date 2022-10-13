@@ -1,10 +1,6 @@
 .filter-container {
     display: flex;
     flex-direction: row;
-} 
-.search-container{
-    box-shadow:
-    rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
 }
 .horizontal {
     display: flex;
@@ -25,11 +21,7 @@ label {
 .search-filter-select {
     margin-top: 1rem;
     width: 15em;
-    outline: none;
-    border: none;
     height: 38px;
-    box-shadow:
-    rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
 }
 
 @media screen and (max-width: 768px) {
