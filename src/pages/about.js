@@ -104,8 +104,7 @@ const About = () => {
           <div className="card-content">
             <h2>Idiris Omer</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+            Front End Developer - HTML, CSS, JS & REACT | Mostly Frontend -  Exploring Backend
             </p>
             <div className="icons">
               <MDBBtn
