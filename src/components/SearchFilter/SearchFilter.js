@@ -143,7 +143,7 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
         <Select
           className="search-filter-select"
           options={groupedOptions}
-          placeholder="Filter Fruits by Nutrients"
+          placeholder="Sort Fruits by Nutrients"
           formatGroupLabel={formatGroupLabel}
           onChange={handleFilterChange}
         />
