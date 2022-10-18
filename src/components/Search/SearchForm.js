@@ -1,35 +1,37 @@
-import React, { useState } from "react";
-import { MdKeyboardReturn, MdSearch } from "react-icons/md";
+import React, { useState } from 'react';
+import { MdKeyboardReturn, MdSearch } from 'react-icons/md';
 
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import "./search-form.css";
+import './search-form.css';
 
 const SearchForm = ({ fruits, filteredFruits, setFilteredFruits }) => {
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState('');
 
-  const notFoundErrorToast = () => toast.error('The fruit was not found', {
-    position: "top-center",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-    });
-
-    const enterFruitErrorToast = () => toast.error('Please enter a fruit to search for', {
-      position: "top-center",
+  const notFoundErrorToast = () =>
+    toast.error('The fruit was not found', {
+      position: 'top-center',
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "light",
-      });
+      theme: 'light',
+    });
+
+  const enterFruitErrorToast = () =>
+    toast.error('Please enter a fruit to search for', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,8 +48,7 @@ const SearchForm = ({ fruits, filteredFruits, setFilteredFruits }) => {
     let allFruitsCopy = [...fruits];
     searchFiltered = allFruitsCopy.filter((searchedFruit) => {
       let fruitsInSmallLetters = searchedFruit.name.toLowerCase();
-      if (fruitsInSmallLetters.includes(searchInput.toLowerCase()))
-        return searchedFruit;
+      if (fruitsInSmallLetters.includes(searchInput.toLowerCase())) return searchedFruit;
     });
 
     if (searchFiltered.length === 0) {
