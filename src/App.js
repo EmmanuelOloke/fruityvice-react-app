@@ -4,7 +4,7 @@ import AppNavbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages";
 import About from "./pages/about";
-import ShowDetail from "./pages/ShowDetail";
+import ShowDetail from "./pages/showdetail";
 import NotFoundPage from "./pages/notfound";
 import Footer from "./components/Footer/Footer";
 

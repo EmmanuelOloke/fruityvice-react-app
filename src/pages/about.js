@@ -17,10 +17,14 @@ const About = () => {
         <div>
           <h1 className="title-gradient">Fruityvice</h1>
           <p className="text-1 grey-text">
-            A powerful webservice which provides data for all kinds of fruit!
+            {/* A powerful webservice which provides data for all kinds of fruit!
             You can use Fruityvice to find out interesting information about
             fruit and educate yourself. The webservice is completely free to use
-            and contribute to.
+            and contribute to. */}
+            Fruityvice is our collaborative project which we worked on.It
+            display's interesting facts about every fruit in details such as it
+            shows about its family the amount of calories, fat and sugar
+            contents
           </p>
         </div>
         <div>
@@ -42,12 +46,16 @@ const About = () => {
         <div className="text-1">
           <h1 className="title-gradient">What function does it do?</h1>
           <p className="grey-text">
-            With Fruityvice you can receive interesting data from any fruit of
+            {/* With Fruityvice you can receive interesting data from any fruit of
             your choosing. On top of that you can add fruits by yourself as
             well! Added fruits will first have to be approved by an admin to
             avoid any errors in the data. The shown data is based on 100 grams
             of the listed fruit. The owner does not guarantee the available data
-            is 100% flawless, however he will do his best to fix any wrong data.
+            is 100% flawless, however he will do his best to fix any wrong data. */}
+            We used FruityVice API to get the data from its server and created a
+            proxy server on our backend which will get data from the fruiyvice
+            API and post's the data to our local host which will then display on
+            our app.
           </p>
         </div>
       </div>
@@ -104,7 +112,8 @@ const About = () => {
           <div className="card-content">
             <h2>Idiris Omer</h2>
             <p>
-            Front End Developer - HTML, CSS, JS & REACT | Mostly Frontend -  Exploring Backend
+              Front End Developer - HTML, CSS, JS & REACT | Mostly Frontend -
+              Exploring Backend
             </p>
             <div className="icons">
               <MDBBtn
