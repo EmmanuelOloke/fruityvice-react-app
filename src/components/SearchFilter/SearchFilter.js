@@ -15,6 +15,7 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
 
   const handleGenusCriteria = (e) => {
     const value = e.target.value;
+    console.log(value);
     // Make a copy of the genusCriteria state array. Doing this because it is not best practice to directly mutate a state variable, so it makes sense to make a copy of it.
     // Modify that copy and then set the state variable to the copy using the setState() function.
     const genusCriteriaCopy = [...genusCriteria];
@@ -79,17 +80,14 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
       let filtered = [];
       if (genusCriteria.length > 0) {
         genusCriteria?.forEach((item) => {
-          filtered = [
-            ...filtered,
-            ...filteredFruits.filter((match) => match.genus.toLowerCase() === item),
-          ];
+          filtered = [...filtered, ...fruits.filter((match) => match.genus.toLowerCase() === item)];
         });
       }
       if (familyCriteria.length > 0) {
         familyCriteria?.forEach((item) => {
           filtered = [
             ...filtered,
-            ...filteredFruits.filter((match) => match.family.toLowerCase() === item),
+            ...fruits.filter((match) => match.family.toLowerCase() === item),
           ];
         });
       }
