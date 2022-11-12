@@ -2,11 +2,10 @@ import React from 'react';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import SearchForm from '../components/Search/SearchForm';
 import SearchFilter from '../components/SearchFilter/SearchFilter';
+import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 import FruitCard from '../components/FruitCard/FruitCard';
 import { useState } from 'react';
 import { useEffect } from 'react';
-
-import Basket from '../assets/empty-fruit-basket.png';
 
 import './style.css';
 
@@ -14,6 +13,7 @@ const Home = () => {
   const [fruits, setFruits] = useState([]);
   const [filteredFruits, setFilteredFruits] = useState([]);
   const [fruitInDetail, setFruitinDetail] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   const getFruitDetails = async () => {
     try {
@@ -36,6 +36,7 @@ const Home = () => {
       if (response.status === 200) {
         setFruits(fruits);
         setFilteredFruits(fruits);
+        setIsLoading(false);
       }
     } catch (error) {
       console.log('Something went wrong while fetching the fruits', error);
@@ -48,7 +49,7 @@ const Home = () => {
 
   return (
     <>
-      {filteredFruits.length > 0 ? (
+      {isLoading ? (
         <div className="container">
           <div className="search-components">
             <SearchForm
@@ -63,8 +64,8 @@ const Home = () => {
             />
           </div>
 
-          <div className="fruit-cards">
-            <FruitCard fruits={filteredFruits} getFruitDetails={getFruitDetails} />
+          <div className="loading-state">
+            <LoadingSpinner />
           </div>
         </div>
       ) : (
@@ -82,17 +83,8 @@ const Home = () => {
             />
           </div>
 
-          <div className="empty-basket">
-            <div className="empty-basket-title">No Fruits Found</div>
-            <img className="basket-img" src={Basket} alt="Empty Fruit Basket" />
-            <button
-              className="empty-basket-btn"
-              onClick={() => {
-                window.location.href = '/';
-              }}
-            >
-              Go To Homepage
-            </button>
+          <div className="fruit-cards">
+            <FruitCard fruits={filteredFruits} getFruitDetails={getFruitDetails} />
           </div>
         </div>
       )}
