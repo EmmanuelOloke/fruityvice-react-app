@@ -35,6 +35,10 @@
 
 }
 
+.brand {
+    font-weight: bold;
+}
+
 .links {
     /* display: flex;
     justify-content: center;
@@ -42,6 +46,7 @@
     justify-items: center; */
     margin: 0 12px;
     text-transform: uppercase;
+    font-weight: bold !important;
 }
 
 .links:hover {
