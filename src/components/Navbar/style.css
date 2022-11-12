@@ -41,5 +41,10 @@
     align-items: center;
     justify-items: center; */
     margin: 0 12px;
+    text-transform: uppercase;
+}
+
+.links:hover {
+    text-decoration: underline;
 }
 

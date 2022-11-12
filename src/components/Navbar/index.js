@@ -11,7 +11,7 @@ const AppNavbar = () => {
       <Navbar collapseOnSelect expand="sm" fixed="sticky" className="nav_style" variant="light">
         <Container>
           <Navbar.Brand href="/" className="brand">
-            <GiFruitBowl className="img" /> Fruityvice
+            <GiFruitBowl className="img" /> FRUITYVICE
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className=".navbar-collapse">
