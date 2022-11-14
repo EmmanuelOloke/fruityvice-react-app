@@ -13,7 +13,7 @@ const ShowDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`https://detail-proxyserver.vercel.app/showd/${id}`, {})
+    fetch(`https://proxyserver-phi.vercel.app/showd/${id}`, {})
       .then((res) => res.json())
       .then((response) => {
         setData((current) => {

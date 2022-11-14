@@ -17,7 +17,7 @@ const Home = () => {
 
   const getFruitDetails = async () => {
     try {
-      const response = await fetch(`https://detail-proxyserver.vercel.app/showd/${fruitInDetail}`);
+      const response = await fetch(`https://proxyserver-phi.vercel.app/showd/${fruitInDetail}`);
       console.log('response = ', response);
       const oneFruit = await response.json();
       if (response.status === 200) {
