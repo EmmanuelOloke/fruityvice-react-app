@@ -1,10 +1,10 @@
-import React from "react";
-import "./ShowDetail.css";
-import Table from "react-bootstrap/Table";
-import { useState } from "react";
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import './ShowDetail.css';
+import Table from 'react-bootstrap/Table';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const ShowDetail = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const ShowDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`https://fruityvice.com/api/fruit/${id}`, {})
+    fetch(`https://detail-proxyserver.vercel.app/showd/${id}`, {})
       .then((res) => res.json())
       .then((response) => {
         setData((current) => {
@@ -25,9 +25,9 @@ const ShowDetail = () => {
           };
         });
         if (response.error) {
-          console.log("error is here!!!");
+          console.log('error is here!!!');
 
-          navigate("*");
+          navigate('*');
         }
       })
       .catch((error) => {
