@@ -1,5 +1,5 @@
 .container {
-    width: 87%;
+    width: 100vw;
 }
 
 .search-components {
@@ -26,13 +26,15 @@
     margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 768px) {
-    .fruit-cards{
-        width: 1300px;
+
+@media screen and (max-width: 768px) {
+    .search-components {
+        flex-direction: column;
+        gap: 2rem;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
     .search-components {
         flex-direction: column;
         gap: 2rem;
