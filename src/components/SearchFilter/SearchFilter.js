@@ -106,35 +106,37 @@ const SearchFilter = ({ fruits, filteredFruits, setFilteredFruits }) => {
           <div className="genus-checkboxes">
             <h5>Genus</h5>
             {genuses.map((genus) => (
-              <Fragment key={genus}>
+              <div key={genus} className="check-label">
                 <input
                   type="checkbox"
+                  id={genus}
                   name={`${genus}`}
                   value={`${genus}`}
                   onChange={handleGenusCriteria}
                 />
-                <label htmlFor="genus" style={{ textTransform: 'capitalize' }}>
+                <label htmlFor={genus} style={{ textTransform: 'capitalize' }}>
                   {genus}
                 </label>
                 <br />
-              </Fragment>
+              </div>
             ))}
           </div>
           <div className="family-checkboxes">
             <h5>Family</h5>
             {families.map((family) => (
-              <Fragment key={family}>
+              <div key={family} className="check-label">
                 <input
                   type="checkbox"
+                  id={family}
                   name={`${family}`}
                   value={`${family}`}
                   onChange={handleFamilyCriteria}
                 />
-                <label htmlFor="family" style={{ textTransform: 'capitalize' }}>
+                <label htmlFor={family} style={{ textTransform: 'capitalize' }}>
                   {family}
                 </label>
                 <br />
-              </Fragment>
+              </div>
             ))}
           </div>
         </div>
