@@ -72,5 +72,6 @@ input[type="checkbox"]:checked:after {
 @media screen and (max-width: 768px) {
     .filter-container {
         flex-direction: column;
+        margin: 0 auto;
     }
 }

@@ -26,3 +26,9 @@
 .fruit-detail-span {
     font-weight: 400;
 }
+
+@media screen and (max-width: 768px) {
+    .fruit-card {
+        margin: 0 auto;
+    }
+}

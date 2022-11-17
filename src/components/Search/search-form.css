@@ -2,7 +2,7 @@
     background-color: #FFFFFF;
     margin-top: 1rem;
     padding: .7rem .9rem;
-    width: 20rem;
+    width: 22rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,4 +36,10 @@
 
 .return-btn:hover {
     background-color: #F6F6F6;
+}
+
+@media screen and (max-width: 768px) {
+    .search-container {
+        margin: 0 auto;
+    }
 }
