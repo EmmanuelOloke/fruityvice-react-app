@@ -1,14 +1,9 @@
 html, body {
-  
-  
   scroll-behavior: smooth;
   min-height: 100vh;
-  
-
 }
 
 .App{
-  
   min-height: 100vh;
   display: flex;
   flex-direction: column;

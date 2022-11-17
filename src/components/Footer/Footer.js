@@ -1,6 +1,5 @@
-import React from "react";
-import './Footer.css'
-
+import React from 'react';
+import './Footer.css';
 
 export default function Footer() {
   return (
@@ -15,8 +14,6 @@ export default function Footer() {
     //     &copy; {new Date().getFullYear()} Copyright: <a>Minderacodeacademy</a>
     //   </div>
     // </MDBFooter>
-    <div className="footer">
-      Made by Minderacodeacademy Team
-    </div>
+    <div className="footer">Mindera Code Academy Team1 &copy; 2022</div>
   );
 }
