@@ -60,20 +60,23 @@ const SearchForm = ({ fruits, filteredFruits, setFilteredFruits }) => {
     }
   };
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
-      <div className="search-container">
-        <MdSearch className="search-icon" />
-        <input
-          type="text"
-          className="search-input"
-          placeholder="Search for a fruit..."
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-        />
-        <button className="return-btn" type="submit">
-          <MdKeyboardReturn />
-        </button>
-      </div>
+    <>
+      <form onSubmit={(e) => handleSubmit(e)}>
+        <div className="search-container">
+          <MdSearch className="search-icon" />
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search for a fruit..."
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
+          />
+          <button className="return-btn" type="submit">
+            <MdKeyboardReturn />
+          </button>
+        </div>
+      </form>
+
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -86,7 +89,7 @@ const SearchForm = ({ fruits, filteredFruits, setFilteredFruits }) => {
         pauseOnHover
         theme="colored"
       />
-    </form>
+    </>
   );
 };
 
